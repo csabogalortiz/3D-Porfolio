@@ -22,14 +22,14 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('/textures/matcaps/9.jpg')
-const matcapTexture2 = textureLoader.load('/textures/matcaps/10.jpg')
+const matcapTexture = textureLoader.load('./textures/matcaps/9.jpg')
+const matcapTexture2 = textureLoader.load('./textures/matcaps/10.jpg')
 
 
 // Fonts
 const fontLoader = new FontLoader()
 fontLoader.load(
-    '/fonts/helvetiker_regular.typeface.json',
+    './fonts/helvetiker_regular.typeface.json',
     (font) => {
         const textGeometry = new TextGeometry(
             '.Catalina',
